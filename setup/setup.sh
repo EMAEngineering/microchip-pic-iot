@@ -60,7 +60,7 @@ firebase use $GOOGLE_CLOUD_PROJECT
 gcloud services enable cloudfunctions.googleapis.com cloudiot.googleapis.com pubsub.googleapis.com
 
 # create pubsub topic
-gcloud pubsub topics create pic-iot
+gcloud pubsub topics create REG_NAM
 
 # create IoT core device registry
 gcloud iot registries create $REG_NAME --region=$CLOUD_REGION --event-notification-config=topic=pic-iot
